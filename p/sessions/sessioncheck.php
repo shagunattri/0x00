@@ -1,9 +1,6 @@
 <?php
 session_start();
-
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,19 +9,21 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sessions</title>
+    <title>Logged IN</title>
 </head>
 
 <body>
-    <?php
-    $_SESSION['name'] = "shagun";
-    $_SESSION['age'] = "eighteen";
+    <p>Logged IN</p>
+    <?php echo $_SESSION['name'];
+    echo "<br>";
+    echo $_SESSION['age'];
     ?>
 
-    <form>
-        <a href=""><input type="submit" value="Submit" link =""></a>
 
-    </form>
+    <label>Logout:</label><a href="session.php">
+        <p>GET out</p>
+        <?php session_destroy(); ?>
+
 </body>
 
 </html>
