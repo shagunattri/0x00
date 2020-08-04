@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main(int argc,char *argv[]) {
+int main(int argc,char *argv[]) { //argument count and argument vector
     if(argc == 2) {
         printf("Hello %s\n",argv[1]);
     } else {
