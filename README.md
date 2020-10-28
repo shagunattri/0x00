@@ -50,4 +50,14 @@ db 0x00001064 - set breakpoint at address
 :dc - run the program
 
 Shitft + s - to step through the function
+
+ood AAAAAAAAA - open file in debug mode and add a key
+
+dc - continue running the program
+
+dr - Check CPU registers
+
+dr rip 0x00403040b - set rip address to execute next 
+
+afvn lacale2_4 i - replace the name lacale2_4 to i
 ```
